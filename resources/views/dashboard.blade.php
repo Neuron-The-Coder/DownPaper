@@ -16,7 +16,25 @@
     <div class="container">
 
       @foreach ($wallpapers as $i)
-        <x-wallpaper :wallpaper="$i"></x-wallpaper>
+        <div class="wallpaper">
+          <div class="picture">
+            <img src="{{ asset('storage/wallpaper/'.$i->image) }}" alt="" srcset="" >
+          </div>
+          <div class="bar">
+            <div class="title">
+              <h3>{{ $i->name }}</h3>
+              <p>{!! $i->description !!}</p>
+            </div>
+            <div class="buttons">
+              <button class="button-enlarge">
+                <img src="{{ asset("storage/enlarge.svg") }}" alt="" srcset="">
+              </button>
+              <button class="button-download">
+                <img src="{{ asset("storage/download.svg") }}" alt="" srcset="">
+              </button>
+            </div>
+          </div>
+        </div>
       @endforeach
 
     </div>

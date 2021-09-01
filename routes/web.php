@@ -16,12 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
-Route::get('/test', function() {
-  return view('test', [
-    'var1' => "Hello",
-    'var2' => DB::table('wallpaper')->where('id', '=', '1')->get()
-  ]);
-});
 
 Route::get('/db_dump', function(){
   echo("Still Fine");
