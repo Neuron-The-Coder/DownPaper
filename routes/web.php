@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\WallpaperController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
 Route::get('/test', function() {
-  return 'This app is working correctly, just the DB is f-ed up';
+  return view('test', [
+    'var1' => "Hello",
+    'var2' => DB::table('wallpaper')->where('id', '=', '1')->get()
+  ]);
 });
 
 Route::get('/db_dump', function(){
