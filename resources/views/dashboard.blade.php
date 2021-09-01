@@ -19,7 +19,6 @@
         <x-wallpaper :wallpaper="$i"></x-wallpaper>
       @endforeach
 
-
     </div>
   </main>
 

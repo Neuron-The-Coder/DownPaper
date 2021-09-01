@@ -34,6 +34,7 @@ class wallpaper extends Component
      */
     public function render()
     {
+        dd($this->name, $this->image, $this->description);
         return view('components.wallpaper');
     }
 }

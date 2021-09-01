@@ -11,7 +11,6 @@ class WallpaperController extends Controller
     public function getViewWallpaper(){
 
         $wallpapers = Wallpaper::all();
-        dd($wallpapers);
         return view("dashboard", [
             "wallpapers" => $wallpapers
         ]);
