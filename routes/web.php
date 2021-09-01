@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
+Route::get('/test', function() {
+  return 'This App working correctly, just the DB is f-ed up';
+});
