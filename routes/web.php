@@ -18,3 +18,7 @@ Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboa
 Route::get('/test', function() {
   return 'This App working correctly, just the DB is f-ed up';
 });
+
+Route::get('/db_dump', function(){
+  dd(parse_url(getenv('DATABASE_URL')));
+});
