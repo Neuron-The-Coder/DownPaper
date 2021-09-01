@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
 Route::get('/test', function() {
-  return 'This App working correctly, just the DB is f-ed up';
+  return 'This app is working correctly, just the DB is f-ed up';
 });
 
 Route::get('/db_dump', function(){
+  echo("Still Fine");
   dd(parse_url(getenv('DATABASE_URL')));
 });
