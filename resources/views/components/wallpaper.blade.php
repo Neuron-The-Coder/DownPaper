@@ -1,6 +1,6 @@
 <div class="wallpaper">
   <div class="picture">
-    <img src="{{ $imagePath() }}" alt="" srcset="" >
+    <img src="{{ asset('storage/wallpaper/'.$image) }}" alt="" srcset="" >
   </div>
   <div class="bar">
     <div class="title">
