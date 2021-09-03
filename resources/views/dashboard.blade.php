@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 
-  <link rel="stylesheet" href="{{ asset("storage/style.css") }}">
+  <style id="style"></style>
 
 </head>
 <body>
@@ -27,10 +27,10 @@
             </div>
             <div class="buttons">
               <button class="button-enlarge">
-                <img src="{{ asset("storage/enlarge.svg") }}" alt="" srcset="">
+                <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/enlarge.svg' }}" alt="" srcset="">
               </button>
               <button class="button-download">
-                <img src="{{ asset("storage/download.svg") }}" alt="" srcset="">
+                <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/download.svg' }}" alt="" srcset="">
               </button>
             </div>
           </div>
@@ -41,6 +41,19 @@
   </main>
 
   <x-footer></x-footer>
+
+  <script defer>
+    var xrf = new XMLHttpRequest();
+    xrf.onreadystatechange = function(){
+      if (xrf.readyState === 4 && xrf.status === 200){
+        document.getElementById("style").innerHTML = xrf.responseText;
+      }
+    }
+
+    xrf.open('GET', 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/style.css');
+    xrf.send();
+
+  </script>
 
 </body>
 </html>
