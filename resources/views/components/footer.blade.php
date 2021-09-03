@@ -4,7 +4,7 @@
         <div class="thanks">
             <h3>Huge huge thanks for:</h3>
             <a href="https://laravel.com/">
-                <img src="{{ asset("storage/laravel.svg") }}" alt="" srcset="">
+                <img src="https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/laravel.svg" alt="" srcset="">
             </a>
         </div>
         <div class="menu">

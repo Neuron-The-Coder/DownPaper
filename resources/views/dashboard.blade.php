@@ -18,7 +18,7 @@
       @foreach ($wallpapers as $i)
         <div class="wallpaper">
           <div class="picture">
-            <img src="{{ asset('storage/wallpaper/'.$i->image) }}" alt="" srcset="" >
+            <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/wallpaper/'.$i->image }}" alt="" srcset="" >
           </div>
           <div class="bar">
             <div class="title">
