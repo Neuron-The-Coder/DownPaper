@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="description" content="Free Wallpaper (still on prototyping)">
+  <title>Down Paper</title>
 
-  <style id="style"></style>
+  <style id="style">
+    {{ $style }}
+  </style>
 
 </head>
 <body>
@@ -43,16 +46,6 @@
   <x-footer></x-footer>
 
   <script defer>
-    var xrf = new XMLHttpRequest();
-    xrf.onreadystatechange = function(){
-      if (xrf.readyState === 4 && xrf.status === 200){
-        document.getElementById("style").innerHTML = xrf.responseText;
-      }
-    }
-
-    xrf.open('GET', 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/style.css');
-    xrf.send();
-
   </script>
 
 </body>

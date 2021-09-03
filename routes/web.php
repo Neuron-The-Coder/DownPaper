@@ -16,8 +16,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
-
-Route::get('/db_dump', function(){
-  echo("Still Fine");
-  dd(parse_url(getenv('DATABASE_URL')));
-});

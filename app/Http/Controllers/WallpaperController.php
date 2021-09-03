@@ -12,7 +12,8 @@ class WallpaperController extends Controller
 
         $wallpapers = Wallpaper::all();
         return view("dashboard", [
-            "wallpapers" => $wallpapers
+            "wallpapers" => $wallpapers,
+            "style" => file_get_contents('https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/style.css')
         ]);
     }
 }
