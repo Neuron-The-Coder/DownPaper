@@ -35,9 +35,11 @@
               <button class="button-enlarge">
                 <img src="{{ github_fetch("/enlarge.svg")  }}" alt="" srcset="">
               </button>
-              <button class="button-download">
-                <img src="{{ github_fetch("/download.svg")  }}" alt="" srcset="">
-              </button>
+              <a href="{{ route('download', ["image" => $i->image]) }}">
+                <button class="button-download">
+                  <img src="{{ github_fetch("/download.svg")  }}" alt="" srcset="">
+                </button>
+              </a>
             </div>
           </div>
         </div>

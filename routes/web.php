@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WallpaperController::class, 'getViewWallpaper'])->name('dashboard');
+Route::get('/download/{image}', [WallpaperController::class, 'downloadWallpaper'])->name('download');
