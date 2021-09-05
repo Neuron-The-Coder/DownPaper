@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Free Wallpaper (still on prototyping)">
+  <meta name="description" content="Free Kartrider Wallpaper for you all :>">
   <title>Down Paper</title>
 
-  <style id="style">
-    {{ $style }}
-  </style>
+  {{-- <style id="style">
+    {{ github_fetch_content("/style.css") }}
+  </style> --}}
+
+  <link rel="stylesheet" href="{{ asset("storage/style.css") }}">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
@@ -21,7 +24,7 @@
       @foreach ($wallpapers as $i)
         <div class="wallpaper">
           <div class="picture">
-            <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/wallpaper/'.$i->image }}" alt="" srcset="" >
+            <img src="{{ github_fetch("/wallpaper/".$i->image) }}" alt="" srcset="" >
           </div>
           <div class="bar">
             <div class="title">
@@ -30,10 +33,10 @@
             </div>
             <div class="buttons">
               <button class="button-enlarge">
-                <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/enlarge.svg' }}" alt="" srcset="">
+                <img src="{{ github_fetch("/enlarge.svg")  }}" alt="" srcset="">
               </button>
               <button class="button-download">
-                <img src="{{ 'https://raw.githubusercontent.com/Neuron-The-Coder/downpaper/main/storage/app/public/download.svg' }}" alt="" srcset="">
+                <img src="{{ github_fetch("/download.svg")  }}" alt="" srcset="">
               </button>
             </div>
           </div>
