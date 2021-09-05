@@ -7,11 +7,11 @@
   <meta name="description" content="Free Kartrider Wallpaper for you all :>">
   <title>Down Paper</title>
 
-  {{-- <style id="style">
+  <style id="style">
     {{ github_fetch_content("/style.css") }}
-  </style> --}}
+  </style>
 
-  <link rel="stylesheet" href="{{ asset("storage/style.css") }}">
+  {{-- <link rel="stylesheet" href="{{ asset("storage/style.css") }}"> --}}
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
