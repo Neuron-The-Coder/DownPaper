@@ -13,7 +13,7 @@
                 <a href="#">Github</a>
                 <a href="#">Deviantart</a>
                 <a href="#">Instagram</a>
-                <a href="#">twitter</a>
+                <a href="#">Twitter</a>
             </div>
         </div>
     </div>
