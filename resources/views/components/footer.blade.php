@@ -10,10 +10,10 @@
         <div class="menu">
             <div class="pick">
                 <p>Made by Doctor Neuron</p>
-                <a href="#">Github</a>
-                <a href="#">Deviantart</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+                <a href="https://github.com/Neuron-The-Coder">Github</a>
+                <a href="https://www.deviantart.com/doctorneuron">Deviantart</a>
+                <a href="https://www.instagram.com/doctorneuron/">Instagram</a>
+                <a href="https://twitter.com/neuron_doctor">Twitter</a>
             </div>
         </div>
     </div>
